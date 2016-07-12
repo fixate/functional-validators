@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "$(npm bin)/babel --presets es2015,stage-0 -d lib/ src/",
     "prepublish": "npm run compile",
-    "watch": "when-changed -r -1 -s . npm run compile",
+    "watch": "when-changed -r -1 -s ./src npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
